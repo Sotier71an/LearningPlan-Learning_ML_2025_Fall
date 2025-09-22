@@ -64,7 +64,7 @@ plt.scatter(X_test[:, 0], X_test[:, 1], c=Y_pred, cmap='viridis', marker='o')
 plt.title("KNN Classification Results")
 plt.xlabel("Feature 1")
 plt.ylabel("Feature 2")
-plt.show()
+
 
 # Save plot
 output_dir = 'code/basic_model/KNN/plots'
@@ -72,3 +72,5 @@ os.makedirs(output_dir, exist_ok=True)
 plt.savefig(os.path.join(output_dir, 'iris_knn_results.png'),
             dpi=300, bbox_inches='tight')
 print(f"Plot saved to {os.path.join(output_dir, 'iris_knn_results.png')}")
+
+plt.show()
